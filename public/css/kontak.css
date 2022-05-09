@@ -1,0 +1,46 @@
+.kiri h2 {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    /* identical to box height */
+}
+p {
+    font-family: 'Kanit';
+
+}
+.socialmedia a {
+    text-decoration : none;
+}
+
+.socialmedia i {
+    margin-right: 10px;
+}
+
+.telepon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.garis {
+    width: 7px;
+    height: 30px;
+    background: #2E99A5;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.form {
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+.form-name {
+    display: flex;
+    width: 100%;
+}

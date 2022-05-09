@@ -1,0 +1,43 @@
+.cont1 h2{
+    font-size: 40px;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 600;
+    
+}
+
+.lines {
+    width: 365px;
+    height: 3px;
+    background: #2E99A5;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+.cont1 p {
+    width: 560px;
+    font-family: 'Kanit';
+    font-weight: 300;
+}
+.visi li{
+    text-decoration: none;
+    color: white;
+    font-family: 'Kanit';
+    font-style: normal;
+    margin-top: 7px;
+
+}
+.linevm{
+    width: 165px;
+    height: 3px;
+    background: #2E99A5;
+    margin-top: 15px;
+    margin-left: 135px;
+    margin-bottom: 35px;
+}
+.misi p{
+    
+    color: white;
+    font-family: 'Kanit';
+    font-style: normal;
+    margin-top: 7px;
+}
