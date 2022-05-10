@@ -1,46 +1,82 @@
-.kiri h2 {
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Dongle&family=Inter:wght@100;300;400&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;1,300;1,400&family=Poppins:wght@200&family=Viga&display=swap');
+
+.kontak{
+    width: 100%;
+    height: 719px;
+    background-color: #FFFFFF;
+}
+.kontak h2{
     font-family: 'Kanit';
     font-style: normal;
     font-weight: 700;
-    /* identical to box height */
-}
-p {
-    font-family: 'Kanit';
-
-}
-.socialmedia a {
-    text-decoration : none;
+    font-size: 27px;
+    padding-top: 50px;
+    color: #000000;
 }
 
-.socialmedia i {
-    margin-right: 10px;
-}
-
-.telepon {
-    display: flex;
-    justify-content: space-between;
-}
-
-.list {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-
-.garis {
-    width: 7px;
-    height: 30px;
+.linek{
+    width: 361px;
+    height: 3px;
+    margin-left: 580px;
+    margin-top: 30px;
     background: #2E99A5;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.form {
-    background-color: black;
-    width: 100%;
+#hub{
     color: white;
+    width: 500px;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 510px;
+    color: #000000;
 }
 
-.form-name {
-    display: flex;
-    width: 100%;
+.contact{
+    width: 281px;
+    height: 213px;
+
+    background: #FFFFFF;
+}
+
+.contact i {
+    margin-top: 30px;
+}
+
+.contact h5{
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.contact p{
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    width: 245px;
+}
+.telp p{
+    margin-top: -15px;
+    font-size: 15px;
+}
+.telp {
+    margin-top: 30px;
+    margin-left: 17px;
+}
+.c-sosmed{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 30px;
+    background: #2E99A5;
+    
+}
+.r-sosmed{
+    margin-top: 100px;
+    margin-left: 500px;
 }

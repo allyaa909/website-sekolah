@@ -1,67 +1,20 @@
 @extends('layouts.navbar')
+@push('css-top')
+<link rel="stylesheet" href="/css/ekskull.css">
+@endpush
 @section('content')
-<div class="container">
-    <div class="kesiswaan" style="margin-left: 100px;">
-    <div class="row">
-        <div class="col">
-            <div class="ekskul d-flex mt-5">
-                <div class="dot shadow-lg p-3 mb-5"><i class="fa-solid fa-basketball fa-2x" id="icon-eks" style="color: white"></i></div>
-                <div class="j-ekskul ms-3">
-                <h3>BASKET</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, cumque?</p>
-            </div>
-            </div>
+<div class="ekskull text-center" style="margin-top: 50px;">
+<h2>EKSTRAKULIKULLER</h2>
+<div class="linek" style="margin-left: 500px; margin-top: 30px;"></div>
+</div>
+<div class="containerA">
+    <div class="ekskul">
+        @foreach ($ekskulls as $ekskull)    
+        <div class="ekskul-1 text-center">
+            <img src="{{ Voyager::image($ekskull->img) }}" width="70" class="mt-4 mb-3" style="color: #2E99A5;">
+            <h2>{{ $ekskull->nama }}</h2>
         </div>
-        <div class="col">
-            <div class="ekskul d-flex mt-5">
-                <div class="dot shadow-lg p-3 mb-5"><i class="fa-solid fa-briefcase-medical fa-2x" id="icon-eks" style="color: white;"></i></div>
-                <div class="j-ekskul ms-3">
-                <h3>BASKET</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, cumque?</p>
-            </div>
-            </div>
-        </div>
-        </div>
-    <div class="row">
-        <div class="col">
-            <div class="ekskul d-flex mt-5">
-                <div class="dot shadow-lg p-3 mb-5"></div>
-                <div class="j-ekskul ms-3">
-                <h3>BASKET</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, cumque?</p>
-            </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="ekskul d-flex mt-5">
-                <div class="dot shadow-lg p-3 mb-5"></div>
-                <div class="j-ekskul ms-3">
-                <h3>BASKET</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, cumque?</p>
-            </div>
-            </div>
-        </div>
-        </div>
-    <div class="row">
-        <div class="col">
-            <div class="ekskul d-flex mt-5">
-                <div class="dot shadow-lg p-3 mb-5"></div>
-                <div class="j-ekskul ms-3">
-                <h3>BASKET</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, cumque?</p>
-            </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="ekskul d-flex mt-5">
-                <div class="dot shadow-lg p-3 mb-5"></div>
-                <div class="j-ekskul ms-3">
-                <h3>BASKET</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, cumque?</p>
-            </div>
-            </div>
-        </div>
-        </div>
+        @endforeach
     </div>
 </div>
 @endsection

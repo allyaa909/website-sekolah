@@ -3,7 +3,7 @@
     
 <link rel="stylesheet" href="/css/profil.css">
 <div class="container">
-    <div class="cont1">
+    <div class="cont1"data-aos="fade-left">
         <div class="row">
             <div class="col-lg-6 mt-5">
                 <h2>SEJARAH SINGKAT</h2>
@@ -18,7 +18,7 @@
     </div>
 </div>
 <div class="container" style="margin-top: 120px;">
-    <div class="cont1">
+    <div class="cont1" data-aos="fade-right">
         <div class="row">
             <div class="col-lg-6 mt-5">
                 <img src="/img/2 1.svg" width="550px">
@@ -32,7 +32,52 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="background-color: #000000; color:#ffffff;">
+    <div class="quotes">
+        <h3 class="text-center">“Bila kaum muda yang telah belajar di sekolah dan menganggap dirinya terlalu tinggi dan pintar untuk melebur dengan masyarakat yang bekerja dengan cangkul dan hanya memiliki cita-cita yang sederhana, maka lebih baik pendidikan itu tidak diberikan sama sekali” - Tan Malaka</h3>
+    </div>
+    <div class="container" style="margin-top: 100px;">
+        <div class="cont4 mt-5">
+            <h2 class="text-center">FASILITAS KAMI</h2>
+            <div class="lines" style="margin-left: 460px; margin-top: 20px;"></div>
+            <p class="text-center" id="fas-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate eveniet quibusdam ratione placeat temporibus debitis? Beatae!</p>
+                        <div class="row">
+                @foreach ($fasilitas as $item)
+                          <div class="col-md-4" data-aos="zoom-in" style="margin-bottom: 50px;">
+                            <img src="{{ Voyager::image($item->img) }}"width="370" style="margin-bottom: 40px;">
+                            <div class="dsc d-flex">
+                                <i class="fa-regular fa-building fa-3x"></i>
+                                <div class="n-fasilitas ms-4">
+                                <h5>{{ $item->nama }}</h5>
+                                <p>ini adalah {{ $item->nama }} smp mutiara 4 bandung</p>
+                            </div>
+                            </div>
+                        </div>  
+                        @endforeach
+            
+            </div>
+    </div>
+    </div>
+    <div class="gallery" style="background-color: #000000; color:#ffffff; margin-top: 50px;">
+        <div class="cont3 mt-5">
+            <div class="row">
+                <div class="col text-center py-3">
+                    <h2>GALERI</h2>
+                    <hr size="7" width="20%" style="color: #2E99A5; margin-left: 40%;">
+                </div>
+            </div>
+            <div class="container">
+           <div class="row">
+               @foreach ($galeris as $galeri) 
+               <div class="col-md-4">
+                   <img src="{{ Voyager::image($galeri->img) }}"width="370" style="margin-bottom: 40px;">
+                </div>
+                @endforeach
+           </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="container-fluid" style="background-color: #ffffff; color:#000000;">
         <div class="container">
             <div class="cont2">
                 <div class="row vimi mt-5 text-center">
@@ -62,57 +107,8 @@
             </div>
         </div>
     </div>
-    <div class="container" style="margin-top: 100px;">
-        <div class="cont-4 mt-5">
-            <div class=" mb-5"><h2 class="text-center">FASILITAS</h2>
-                <div class="lines" style="margin-left: 460px; margin-top: 20px;"></div>
-                <table class="table" style="margin-top: 50px;">
-                    <thead>
-                        <tr class="text-center">
-                            <th scope="col">No</th>
-                            <th scope="col">Nama</th>
-                            <th scope="col">Deskripsi</th>
-                            <th scope="col">Foto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($fasilitas as $item)
-                            
-                        <tr class="mt-3">
-                            <th scope="row">1</th>
-                            <td>{{ $item->nama }}</td>
-                            <td>{{ $item->deskripsi }}</td>
-                            <td> <img src="{{ Voyager::image($item->img) }}"width="300"></td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
-            </div>
-    </div>
-<div class="container-fluid" style="background-color: #000000; color:#ffffff; margin-top: 250px;">
-    <div class="cont3 mt-5">
-        <div class="row">
-            <div class="col-lg-12 text-center py-3">
-                <h2>GALERI</h2>
-                <hr size="7" width="20%" style="color: #2E99A5; margin-left: 40%;">
-            </div>
-        </div>
-        <div class="row text-center pt-3 pb-5">
-            <div class="col-lg-4">
-                huhuhu
-                
-            </div>
-            <div class="col-lg-4">
-               hhahaha
-            </div>
-            <div class="col-lg-4">
-                uyuyuyu
-            </div>
-        </div>
-    </div>
-</div>
-<img src="/img/Polygon 1.svg" width="100%" height="100%"/>
+   
+
 
 
 @endsection
