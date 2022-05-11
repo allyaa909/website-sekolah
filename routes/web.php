@@ -19,7 +19,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index',[
+        "news" => Berita::latest()->take(2)->get()
+    ]);
 });
 Route::get('/kesiswaan', function () {
     return view('kesiswaan',[

@@ -1,6 +1,8 @@
 @extends('layouts.navbar')
-@section('content')
+@push('css-top')
 <link rel="stylesheet" href="/css/kontak.css">  
+@endpush
+@section('content')
 <div class="kontak">
   <h2 class="text-center">HUBUNGI KAMI</h2>
   <div class="linek"></div>

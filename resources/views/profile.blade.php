@@ -1,7 +1,8 @@
 @extends('layouts.navbar')
-@section('content')
-    
+@push('css-top')
 <link rel="stylesheet" href="/css/profil.css">
+@endpush
+@section('content')  
 <div class="container">
     <div class="cont1"data-aos="fade-left">
         <div class="row">
@@ -53,10 +54,9 @@
                             </div>
                         </div>  
                         @endforeach
-            
+                    </div>
+                </div>
             </div>
-    </div>
-    </div>
     <div class="gallery" style="background-color: #000000; color:#ffffff; margin-top: 50px;">
         <div class="cont3 mt-5">
             <div class="row">
@@ -77,38 +77,28 @@
     </div>
     </div>
     </div>
-    <div class="container-fluid" style="background-color: #ffffff; color:#000000;">
-        <div class="container">
-            <div class="cont2">
-                <div class="row vimi mt-5 text-center">
-                    <div class="col-lg-5 my-3 px-5">
-                        <h2>VISI</h2>
-                        <div class="linevm"></div>
-                        <div class="visi">
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                    </div>
-                    <div class="col-lg-5 my-3 px-5">
-                        <div class="misi">
-                        <h2>MISI</h2>
-                        <div class="linevm"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam eum eveniet quia 
-                            illum voluptate cum reiciendis maiores.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+   <div class="container">
+       <div class="visi d-flex" style="margin-top: 70px;">
+           <img src="/img/1 1.svg" width="400" alt="">
+           <div class="j-visi" style="margin-left: 50px;">
+                <h2>VISI</h2>
+                <div class="lines" style="margin-top: 20px;"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A repellat nam enim pariatur similique doloribus iusto quasi nisi laudantium quod unde adipisci maxime possimus aliquam, neque corrupti, iure reprehenderit ipsa suscipit optio. Fugit quis aliquid, cumque velit numquam provident rem assumenda mollitia, saepe maxime in nulla atque, tempora corporis blanditiis.</p>
+           </div>
         </div>
-    </div>
-   
-
-
-
+        <div class="misi d-flex" style="margin-top: 70px; margin-bottom: 100px;">
+            <div class="j-misi" style="margin-left: 50px;">
+                <h2>MISI</h2>
+                <div class="lines" style="margin-top: 20px;"></div>
+                <ul style="margin-right: 200px;">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore?</li>
+                </ul>
+           </div>
+           <img src="/img/2 1.svg" width="400" alt="">
+        </div>
+   </div>
 @endsection

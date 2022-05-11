@@ -52,12 +52,12 @@ body{
 }
 .linet{
     position: absolute;
-width: 250px;
-height: 2px;
-left: 670px;
-top: 292px;
+    width: 250px;
+    height: 2px;
+    left: 670px;
+    top: 292px;
 
-background: #FFFFFF;
+    background: #FFFFFF;
 }
 .menu {
     background-image: url('/img/mt2.png');
@@ -231,7 +231,4 @@ background: #FFFFFF;
 #icon-eks{
     margin-left: 17px;
     margin-top: 17px;
-}
-.tentang{
-
 }

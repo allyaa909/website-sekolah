@@ -1,29 +1,23 @@
 @extends('layouts.navbar')
+@push('css-top')
+<link rel="stylesheet" href="/css/informasi.css">
+@endpush
 @section('content')
-<div class="judul" style=" margin-top: 50px;">
-    <div class="col" style="margin-left: 150px;">
-      <p id="events" style="margin-left: 550px;">BERITA</p>
-      <div class="line4" style="margin-left: 400px;"></div>
-    </div>
+      <p id="events" style="margin-left: 700px; margin-top: 40px;">BERITA</p>
+      <div class="line4" style="margin-left: 540px;"></div>
+   <div class="berita" style="margin-top: 80px;" data-aos="zoom-in">
+    <div class="container">
+     <div class="row">
+       @foreach ($news as $new)
+       <div class="col-md-4 text-center">
+        <img src="{{ Voyager::image($new->img) }}" style="margin-bottom: 78px;" alt="">
+        <h3>{{ $new->judul }}</h3>
+        <p>{{ $new->deskripsi }}</p>
+      </div>
+       @endforeach
+     </div>
+   </div>
   </div>
-  </div>
-<div class="container" style="margin-top: 70px;">
-  @foreach ($news as $new)
-      
- 
-<div class="row">
-  <div class="col-sm-8">
-    <div class="event1" style="width: 600px;">
-      <p id="je">{{ $new->judul }}</p>
-      <p>{{ $new->deskripsi }}</p>
-    </div>
-  </div>
-  <div class="col-sm-3" style="margin-right: 70px; ">
-    <img src="{{ Voyager::image($new->img) }}"width="370" style="margin-bottom: 40px;">
-  </div>
-</div>
-@endforeach
-</div>
 <div class="judul" style=" margin-top: 150px;">
   <div class="col" style="margin-left: 150px;">
     <p id="events" style="margin-left: 550px;">DATA GURU</p>
